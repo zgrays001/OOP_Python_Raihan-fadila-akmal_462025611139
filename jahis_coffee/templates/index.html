@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jahis Coffee — Coffee, Space & Stories</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <a href="#home" class="brand">
+    <img
+        src="{{ url_for('static', filename='images/logo.png') }}"
+        alt="Jahis Coffee"
+        class="brand-logo"
+    >
+</a>
+
+    <div class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#gallery">Suasana</a>
+        <a href="#menu">Menu</a>
+        <a href="#location">Lokasi</a>
+    </div>
+
+    <button class="cart-button" type="button">
+        <span class="cart-button-label">Pesanan</span>
+        <span class="cart-count">0</span>
+    </button>
+
+</nav>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-photo">
+        <img
+            src="{{ url_for('static', filename='images/hero.png') }}"
+            alt="Jahis Coffee"
+            onerror="this.style.display='none'"
+        >
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-eyebrow">
+            WELCOME TO
+        </p>
+
+        <h1>
+            JAHIS
+            <span>COFFEE</span>
+        </h1>
+
+        <p class="hero-tagline">
+            Coffee, Space & Stories.
+        </p>
+
+        <p class="hero-description">
+            Tempat untuk menikmati secangkir kopi,
+            berbagi cerita, menyelesaikan pekerjaan,
+            atau sekadar menikmati waktu dengan
+            suasana yang nyaman.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="button button-primary">
+                Lihat Menu
+            </a>
+
+            <a href="#about" class="button button-outline">
+                Tentang Kami
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+    </div>
+
+</section>
+
+
+<section class="intro-section">
+
+    <div class="intro-image">
+        <img
+            src="{{ url_for('static', filename='images/more-than-coffee.jpg') }}"
+            alt="Jahis Coffee"
+        >
+    </div>
+
+    <div class="intro-number">
+        01
+    </div>
+
+    <div class="intro-content">
+
+        <p class="section-label">
+            MORE THAN COFFEE
+        </p>
+
+        <h2>
+            Secangkir kopi.<br>
+            Banyak cerita.
+        </h2>
+
+        <p>
+            Bagi kami, coffee shop bukan hanya tentang
+            minuman yang disajikan. Ini tentang ruang,
+            pertemuan, percakapan, dan cerita yang
+            tercipta di dalamnya.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="about-section" id="about">
+
+    <div class="about-image">
+
+        <img
+            src="{{ url_for('static', filename='images/about.jpg') }}"
+            alt="Tentang Jahis Coffee"
+            onerror="this.style.display='none'"
+        >
+
+        <div class="image-fallback">
+            <strong>JAHIS</strong>
+            <span>COFFEE</span>
+        </div>
+
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-label">
+            OUR STORY
+        </p>
+
+        <h2>
+            Tentang<br>
+            Jahis Coffee
+        </h2>
+
+        <div class="title-line"></div>
+
+        <p>
+            Jahis Coffee hadir sebagai ruang untuk
+            menikmati kopi dengan suasana yang nyaman
+            dan sederhana. Kami percaya bahwa setiap
+            cangkir memiliki cerita dan setiap kunjungan
+            dapat menjadi sebuah pengalaman.
+        </p>
+
+        <p>
+            Dari espresso hingga manual brew,
+            dari signature coffee hingga matcha,
+            setiap pilihan kami hadirkan untuk menemani
+            berbagai cerita dan aktivitasmu.
+        </p>
+
+        <div class="founded-box">
+            <span class="founded-label">ESTABLISHED</span>
+            <strong>SINCE 2021</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="philosophy-section">
+
+    <div class="section-heading centered">
+
+        <p class="section-label">
+            WHAT WE BELIEVE
+        </p>
+
+        <h2>
+            Bukan sekadar<br>
+            tempat minum kopi.
+        </h2>
+
+    </div>
+
+    <div class="philosophy-grid">
+
+        <article class="philosophy-card">
+
+            <span class="card-number">01</span>
+
+            <div class="philosophy-icon">☕</div>
+
+            <h3>Coffee</h3>
+
+            <p>
+                Berbagai pilihan kopi untuk menemani
+                setiap suasana dan aktivitasmu.
+            </p>
+
+        </article>
+
+        <article class="philosophy-card">
+
+            <span class="card-number">02</span>
+
+            <div class="philosophy-icon">◇</div>
+
+            <h3>Space</h3>
+
+            <p>
+                Ruang yang nyaman untuk bersantai,
+                bekerja, belajar, atau bertemu teman.
+            </p>
+
+        </article>
+
+        <article class="philosophy-card">
+
+            <span class="card-number">03</span>
+
+            <div class="philosophy-icon">♡</div>
+
+            <h3>Stories</h3>
+
+            <p>
+                Karena banyak cerita sederhana
+                bermula dari meja dan secangkir kopi.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="quote-section">
+
+    <div class="quote-content">
+
+        <span class="quote-mark">“</span>
+
+        <blockquote>
+            Good coffee.<br>
+            Good space.<br>
+            Good stories.
+        </blockquote>
+
+        <p>— JAHIS COFFEE —</p>
+
+    </div>
+
+</section>
+
+
+<section class="gallery-section" id="gallery">
+
+    <div class="gallery-header">
+
+        <div>
+
+            <p class="section-label">
+                RASA YANG JADI CERITA
+            </p>
+
+            <h2>
+                Suasana<br>
+                Jahis
+            </h2>
+
+        </div>
+
+        <p class="gallery-description">
+            Temukan racikan favorit Jahis Coffee, dari kopi klasik
+            hingga kreasi signature yang dibuat untuk menemani
+            setiap momen.
+        </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item gallery-large">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery-01.jpg') }}"
+                alt="Suasana Jahis Coffee"
+                onerror="this.style.display='none'"
+            >
+
+            <span class="gallery-number">01</span>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery-02.jpg') }}"
+                alt="Suasana Jahis Coffee"
+                onerror="this.style.display='none'"
+            >
+
+            <span class="gallery-number">02</span>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery-03.jpg') }}"
+                alt="Suasana Jahis Coffee"
+                onerror="this.style.display='none'"
+            >
+
+            <span class="gallery-number">03</span>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery-04.jpg') }}"
+                alt="Suasana Jahis Coffee"
+                onerror="this.style.display='none'"
+            >
+
+            <span class="gallery-number">04</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="menu-section" id="menu">
+
+    <div class="section-heading centered">
+
+        <p class="section-label">
+            OUR MENU
+        </p>
+
+        <h2>
+            Temukan<br>
+            favoritmu.
+        </h2>
+
+        <p class="menu-introduction">
+            Pilih menu favorit dan tambahkan langsung
+            ke pesananmu.
+        </p>
+
+    </div>
+
+
+    <div class="categories">
+
+        <button
+            class="category-button active"
+            data-category="Semua"
+            type="button"
+        >
+            Semua
+        </button>
+
+        <button
+            class="category-button"
+            data-category="Espresso Base"
+            type="button"
+        >
+            Espresso Base
+        </button>
+
+        <button
+            class="category-button"
+            data-category="Signature Coffee"
+            type="button"
+        >
+            Signature Coffee
+        </button>
+
+        <button
+            class="category-button"
+            data-category="Manual Brew"
+            type="button"
+        >
+            Manual Brew
+        </button>
+
+        <button
+            class="category-button"
+            data-category="Matcha Series"
+            type="button"
+        >
+            Matcha Series
+        </button>
+
+    </div>
+
+
+    <div class="product-grid">
+
+        {% for product in products %}
+
+        <article
+            class="product-card"
+            data-category="{{ product.category_name }}"
+        >
+
+            <div class="product-image">
+
+                {% if product.image %}
+
+                <img
+                    src="{{ url_for('static', filename='images/products/' ~ product.image) }}"
+                    alt="{{ product.product_name }}"
+                    onerror="this.style.display='none'"
+                >
+
+                {% endif %}
+
+                <div class="product-image-placeholder">
+                    <span>JAHIS</span>
+                    <small>COFFEE</small>
+                </div>
+
+                <span class="product-category-badge">
+                    {{ product.category_name }}
+                </span>
+
+            </div>
+
+
+            <div class="product-content">
+
+                <h3 class="product-name">
+                    {{ product.product_name }}
+                </h3>
+
+                <p class="product-description">
+                    {{ product.description }}
+                </p>
+
+
+                <div class="product-footer">
+
+                    <div>
+
+                        <span class="price">
+                            Rp{{ "{:,.0f}".format(product.price).replace(",", ".") }}
+                        </span>
+
+                        <span class="stock">
+                            Stok {{ product.stock }}
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="add-button"
+                        type="button"
+                        data-id="{{ product.id_product }}"
+                        data-name="{{ product.product_name }}"
+                        data-price="{{ product.price }}"
+                    >
+                        + Pesan
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<section class="experience-section">
+
+    <div class="experience-photo">
+
+        <img
+            src="{{ url_for('static', filename='images/experience.jpg') }}"
+            alt="Jahis Coffee"
+            onerror="this.style.display='none'"
+        >
+
+    </div>
+
+    <div class="experience-overlay"></div>
+
+
+    <div class="experience-content">
+
+        <p class="section-label light">
+            YOUR DAILY SPACE
+        </p>
+
+        <h2>
+            Datang untuk kopi.<br>
+            Tinggal untuk suasananya.
+        </h2>
+
+        <p>
+            Sendiri, bersama teman, mengerjakan tugas,
+            atau sekadar ingin berhenti sejenak dari
+            kesibukan — ada tempat untukmu di Jahis.
+        </p>
+
+        <a href="#location" class="text-link">
+            Kunjungi Jahis
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="location-section" id="location">
+
+    <div class="location-info">
+
+        <p class="section-label">
+            FIND US
+        </p>
+
+        <h2>
+            Sampai jumpa<br>
+            di Jahis.
+        </h2>
+
+
+        <div class="location-details">
+
+            <div class="location-item">
+
+                <span>01</span>
+
+                <div>
+                    <small>ALAMAT</small>
+                    <p>Universitas Darussalam Gontor
+Jl. Raya Siman No.Km. 6, Dusun I,
+Siman, Kec. Siman, Kabupaten Ponorogo,
+Jawa Timur 63417</p>
+                </div>
+
+            </div>
+
+
+            <div class="location-item">
+
+                <span>02</span>
+
+                <div>
+                    <small>JAM OPERASIONAL</small>
+                    <p>Gedung Terpadu UNIDA: 08.00–15.00
+UNIDA Mart: 07.00–22.00</p>
+                </div>
+
+            </div>
+
+
+            <div class="location-item">
+
+                <span>03</span>
+
+                <div>
+                    <small>INSTAGRAM</small>
+                    <p><a
+        href="https://www.instagram.com/jahiscoffee/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >@jahiscoffee</a></p>
+                </div>
+
+            </div>
+
+
+            <div class="location-item">
+
+                <span>04</span>
+
+                <div>
+                    <small>WHATSAPP</small>
+                    <p>0851 9133 2496</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="map-placeholder">
+        <iframe
+            src="https://www.google.com/maps?q=Universitas+Darussalam+Gontor,+Jl.+Raya+Siman+No.Km.+6,+Siman,+Ponorogo,+Jawa+Timur+63417&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-brand">
+        <strong>JAHIS</strong>
+        <span>COFFEE</span>
+    </div>
+
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#gallery">Suasana</a>
+        <a href="#menu">Menu</a>
+        <a href="#location">Lokasi</a>
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>© 2026 Jahis Coffee</p>
+
+        <p>Coffee, Space & Stories.</p>
+
+    </div>
+
+</footer>
+
+
+<div class="cart-overlay">
+
+    <aside class="cart-drawer">
+
+        <div class="cart-header">
+
+            <div>
+                <span class="cart-eyebrow">
+                    YOUR ORDER
+                </span>
+
+                <h2>Pesananmu</h2>
+            </div>
+
+            <button
+                class="cart-close"
+                type="button"
+                aria-label="Tutup keranjang"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="cart-body">
+
+            <div class="cart-empty">
+
+                <div class="empty-icon">
+                    ☕
+                </div>
+
+                <h3>Keranjang masih kosong</h3>
+
+                <p>
+                    Pilih menu favoritmu dan
+                    tambahkan ke pesanan.
+                </p>
+
+            </div>
+
+            <div class="cart-items"></div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <div>
+                    <span>TOTAL PESANAN</span>
+                    <small>Belum termasuk biaya lainnya</small>
+                </div>
+
+                <strong class="cart-total-price">
+                    Rp0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="whatsapp-order-button"
+                type="button"
+                disabled
+            >
+
+                <span>Pesan via WhatsApp</span>
+
+                <span class="order-arrow">
+                    →
+                </span>
+
+            </button>
+
+            <p class="cart-footer-note">
+                Pesanan akan diteruskan melalui WhatsApp.
+            </p>
+
+        </div>
+
+    </aside>
+
+</div>
+
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}"
+></script>
+
+</body>
+
+</html>
